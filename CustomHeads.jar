@@ -26,16 +26,12 @@ public class CustomHeads {
         byte[] encodedData = Base64.encodeBase64(String.format("{textures:{SKIN:{url:\"%s\"}}}", url).getBytes());
         profile.getProperties().put("textures", new Property("textures", new String(encodedData)));
         Field profileField = null;
-        try
-        {
+        try {
             profileField = headMeta.getClass().getDeclaredField("profile");
             profileField.setAccessible(true);
             profileField.set(headMeta, profile);
         }
-        catch (NoSuchFieldException | IllegalArgumentException | IllegalAccessException e)
-        {
-            e.printStackTrace();
-        }
+        catch (NoSuchFieldException | IllegalArgumentException | IllegalAccessException e) { }
         head.setItemMeta(headMeta);
         return head;
     }
