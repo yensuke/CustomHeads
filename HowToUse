@@ -1,0 +1,24 @@
+1. Go to https://minecraft-heads.com/custom-heads
+2. Search a head you like
+3. Scroll down to Loot table
+
+4. Copy everything after [{Value:\"     -> to =
+
+For example:
+eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3Rl
+eHR1cmUvZDY4NWUyZTkwNmI0NDY0N2E5Y2RjODA2NmIxMDZiYzUwYTJjOWFiZjk3NGU2OTIzOTkxN2ZkMjFhMTViNDM2OCJ9fX0=
+
+5. Go to https://www.base64decode.org/
+6. Paste it there
+7. Decode
+8. Copy the link
+
+For example:
+http://textures.minecraft.net/texture/d685e2e906b44647a9cdc8066b106bc50a2c9abf974e69239917fd21a15b4368
+
+9. In the code:
+
+CustomHeads.getSkull("http://textures.minecraft.net/texture/7caa5bf1bede9a27a0d0b985f77e8b9730d5db3eda952dfe3f1a31b87d5efec8")
+
+
+There you go :)
